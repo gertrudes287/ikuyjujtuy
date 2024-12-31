@@ -281,6 +281,8 @@ local AntiHook = function(Func)
 	end
 end
 
+print("tom de pele")
+
 return ("uh oh, you dont see code?"):reverse((function() 
 
 	--[[pcall(function()
@@ -484,6 +486,7 @@ return ("uh oh, you dont see code?"):reverse((function()
 				local v12 = v4:WaitForChild("Backpack")
 				local root = v4.Character:WaitForChild("HumanoidRootPart", math.huge)
 				root.ChildAdded:connect(function(p1)
+					print("dmskadmkls", p1)
 					if p1:IsA("BodyGyro") or p1:IsA("BodyVelocity") then
 						wait(1)
 						if root:FindFirstChildWhichIsA("BodyGyro") and root:FindFirstChildWhichIsA("BodyVelocity") then
@@ -493,12 +496,6 @@ return ("uh oh, you dont see code?"):reverse((function()
 					end
 				end)
 			end
-		end)
-	end)
-	
-	pcall(function()
-		spawn(function()
-			mandamot("teste (1)")
 		end)
 	end)
 
